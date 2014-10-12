@@ -1,4 +1,5 @@
-require 'ostruct'
+require 'erb'
+require 'pathname'
 
 module ImageBatchProcessor
   class HtmlBuilder
