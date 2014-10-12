@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <style type="text/css">
+      nav {
+          margin: 10px;
+      }
+  </style>
+</head>
+<body>
+<header>
+  <h1><%= title %></h1>
+
+  <nav>
+    <% navigation.each do |nav| %>
+        <a href="<%= nav.href %>"><%= nav.text %></a>
+    <% end %>
+  </nav>
+</header>
+
+<% images.each do |image| %>
+    <img src="<%= image.thumbnail %>" class="thumbnail">
+<% end %>
+</body>
+</html>

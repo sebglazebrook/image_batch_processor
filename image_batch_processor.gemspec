@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ImageBatchProcessor::VERSION
   spec.authors       = ["Seb Glazebrook"]
   spec.email         = ["me@sebglazebrook.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Batch Process Images}
+  spec.description   = %q{Using EXIF data display image thumbnails categorised by camera make and model}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,7 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency 'to_slug'
+  spec.add_dependency 'activesupport'
+
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency 'nokogiri'
 end
