@@ -40,6 +40,6 @@ describe ImageBatchProcessor do
       it { expect{subject}.to raise_error ArgumentError, 'Input file does not exist' }
     end
 
-    # after { FileUtils.rm_rf(output_directory) }
+    after { FileUtils.rm_rf(output_directory) }
   end
 end
