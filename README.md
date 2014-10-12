@@ -1,24 +1,22 @@
 # ImageBatchProcessor
 
-TODO: Write a gem description
+Gem to display thumbnail images from xml exif data
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'image_batch_processor'
+    gem 'image_batch_processor', :git => 'git://github.com/sebglazebrook/image_batch_processor.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install image_batch_processor
-
 ## Usage
 
-TODO: Write usage instructions here
+    require 'image_batch_processor'
+    
+    ImageBatchProcessor.process('/my/exif/file.xml', '/my/output/dir')
 
 ## Contributing
 
